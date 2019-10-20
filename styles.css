@@ -1,0 +1,92 @@
+body {margin:0; font-family: "Myriad Pro Light"; font-size : 120%;}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #F1F1F1;
+	position: fixed;
+	text-align: center;
+	padding-left: 100px;
+	width: 100%;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px 12px 16px;
+    text-decoration: none;
+	border-bottom: 2px solid #F1F1F1;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    /* background-color: #1AAD19; */
+    color: black;
+	text-decoration : none;
+	border-bottom: 2px solid #1AAD19; 
+}
+
+/* when active 
+.topnav a:active {
+	text:expression(target="_blank");
+}*/
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 18%;
+	padding-left : 100px; 
+}
+
+/* Middle column */
+.column.middle {
+    width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other 
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+*/
+
+@media (min-width: 1400px) {
+	body { width: 1400px; }
+}
+
+@media (max-width: 1200px) {
+	body { width: 1200px; }
+}
+
+a { text-decoration : none; }
+a:hover { text-decoration : underline; }
+/* when active 
+a:active {
+	text:expression(target="_blank");
+}*/
+
+#avatar {border-radius: 6px;}
+
+.bio .info p a {color: black; text-decoration : none;}
+.bio .info p a:hover {color: black; text-decoration : none;}
+
+.block { height : 100%; margin : 20px auto;}
+.block .logo { width: 150 px; height : auto; margin-right : 10px; margin-top : 10px; margin-bottom : 0px; float : left; border : 0;}
+.block .info { padding-top : 5px; }
+/*.block .info  strong a {color: black;}*/
